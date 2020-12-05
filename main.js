@@ -31,3 +31,70 @@ function add_new_img(getImg) {
         canvas.add(object_new);
     });
 }
+
+window.addEventListener("keydown", my_keydown);
+
+function my_keydown(e) {
+    keypress = e.keyCode;
+    console.log(keypress);
+
+    if (keypress == "70") {
+        add_new_img("images/spiderman_face.png");
+        console.log("F Key Pressed");
+    }
+
+    if (keypress == "66") {
+        add_new_img("images/spiderman_body.png");
+        console.log("B Key Pressed");
+    }
+
+    if (keypress == "76") {
+        add_new_img("images/ironman_legs.png");
+        console.log("L Key Pressed");
+    }
+
+    if (keypress == "82") {
+        add_new_img("images/thor_right_hand.png");
+        console.log("R Key Pressed");
+    }
+
+    if (keypress == "72") {
+        add_new_img("images/ironman_left_hand.png");
+        console.log("R Key Pressed");
+    }
+    if (keypress == "37") {
+        Left();
+        console.log("LEFT");
+    }
+
+    if (keypress == "38") {
+        Up();
+        console.log("UP");
+    }
+
+    if (keypress == "39") {
+        Right();
+        console.log("RIGHT");
+    }
+
+    if (keypress == "40") {
+        Down();
+        console.log("DOWN");
+    }
+}
+
+function Right() {
+    ////
+}
+
+function Up() {
+    ////
+}
+
+function Left() {
+    ////
+}
+
+function Down() {
+    ////
+}
